@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>POS_MAIN_WINDOW</class>
+ <widget class="QMainWindow" name="POS_MAIN_WINDOW">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1368</width>
+    <height>853</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>POS_MAIN_WINDOW</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="topWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1261</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(&quot;C:/Users/nikna/OneDrive/Dokumenty/POS-ATAMAN/images/topWidget.png&quot;);
+ background-position: center;</string>
+    </property>
+    <widget class="QPushButton" name="refaund_btn">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>80</y>
+       <width>111</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">box-shadow:inset 0px 0px 15px 3px #23395e;
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;</string>
+     </property>
+     <property name="text">
+      <string>Refaund</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="setings_btn">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>80</y>
+       <width>111</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">box-shadow:inset 0px 0px 15px 3px #23395e;
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;</string>
+     </property>
+     <property name="text">
+      <string>Setings</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="refreshdata_btn">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>80</y>
+       <width>151</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;</string>
+     </property>
+     <property name="text">
+      <string>Refresh Data</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="getcash_btn">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>80</y>
+       <width>151</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+
+
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;</string>
+     </property>
+     <property name="text">
+      <string>Get Cash</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="close_shift_btn">
+     <property name="geometry">
+      <rect>
+       <x>1090</x>
+       <y>80</y>
+       <width>151</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">box-shadow:inset 0px 0px 15px 3px #23395e;
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;</string>
+     </property>
+     <property name="text">
+      <string>Close Shift</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1261</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background-color:#5BC0BE;</string>
+    </property>
+    <widget class="QPushButton" name="topMenu_btn">
+     <property name="geometry">
+      <rect>
+       <x>1130</x>
+       <y>0</y>
+       <width>31</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Show</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>440</y>
+      <width>591</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <widget class="QTableView" name="tableView_readonly">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>591</width>
+       <height>351</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> selection-background-color: qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,
+                                stop: 0 #55aaff, stop: 1 black);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>710</y>
+      <width>671</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 1px solid #199909;
+            border-radius: 6px;
+            background-color: #116a06;
+            background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.67, 
+            stop: 0 #22c70d, stop: 1 #116a06);
+text:center;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>671</width>
+      <height>631</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>40</y>
+      <width>641</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    border-style: outset;
+    border-width: 5px;
+    border-radius: 1px;
+    border-color: blue;
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="search_lbl">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>40</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> selection-border-color: qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,
+                                stop: 0 #55aaff, stop: 1 black);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>669</x>
+      <y>39</y>
+      <width>601</width>
+      <height>402</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="1" column="1">
+       <widget class="QPushButton" name="electronics_btn">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Electonics</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Baby </string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="food_btn">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Food</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="toys_btn">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Toys</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="furnitura_btn">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Furnitura</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="Clothes_btn">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clothes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="sport_btn">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Sport</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="personal_care_btn">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Personal
+care</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="Laether_btn">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Leather</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="food_page">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="Clothes_btn_2">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clothes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="Clothes_btn_4">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clothes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="Clothes_btn_3">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clothes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="Clothes_btn_5">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clothes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="Clothes_btn_6">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clothes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="Clothes_btn_7">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clothes</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="Candy_page"/>
+    <widget class="QWidget" name="Clothes_page">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="2">
+       <widget class="QPushButton" name="Clothes_btn_12">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clothes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="Clothes_btn_8">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clothes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="Clothes_btn_9">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clothes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="Clothes_btn_10">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clothes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="Clothes_btn_11">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clothes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="Clothes_btn_13">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clothes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="Clothes_btn_14">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clothes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="Clothes_btn_15">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clothes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="Clothes_btn_16">
+        <property name="minimumSize">
+         <size>
+          <width>137</width>
+          <height>122</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clothes</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="electronics_lbl">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>420</y>
+      <width>137</width>
+      <height>122</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+    </property>
+    <property name="text">
+     <string>Electronics</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="clothing_lbl">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>240</y>
+      <width>137</width>
+      <height>122</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+    </property>
+    <property name="text">
+     <string>Clothes</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="toys_lbl">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>350</y>
+      <width>137</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+    </property>
+    <property name="text">
+     <string>Toys</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_12">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>240</y>
+      <width>137</width>
+      <height>122</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>137</width>
+      <height>122</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_11">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>400</y>
+      <width>137</width>
+      <height>122</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>137</width>
+      <height>122</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border-radius: 10px; background:rgb(170, 120, 170); color: #4A0C46;
+border-color:red;
+border: 5px solid rgb(85, 85, 255);</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <zorder>widget_3</zorder>
+   <zorder>label</zorder>
+   <zorder>tableView</zorder>
+   <zorder>lineEdit</zorder>
+   <zorder>search_lbl</zorder>
+   <zorder>topWidget</zorder>
+   <zorder>widget</zorder>
+   <zorder>stackedWidget</zorder>
+   <zorder>electronics_lbl</zorder>
+   <zorder>clothing_lbl</zorder>
+   <zorder>toys_lbl</zorder>
+   <zorder>pushButton_12</zorder>
+   <zorder>pushButton_11</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1368</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
